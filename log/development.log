@@ -3310,3 +3310,11 @@ Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c6
 
 
 Started GET "/assets/stock_photos/The_Flash_thumbnail-cbf89e1679ab9c44b78a5931c36ff990571b1e3d1d88c6d648c7883d5471d6c8.jpg" for ::1 at 2016-03-15 21:20:53 -0400
+
+
+Started GET "/books/1" for ::1 at 2016-03-15 21:28:17 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.6ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
