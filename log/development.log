@@ -3318,3 +3318,580 @@ Processing by BooksController#show as HTML
   Rendered books/show.html.erb within layouts/application (0.1ms)
   Rendered partials/_sidebar.html.erb (0.6ms)
 Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/1" for ::1 at 2016-03-15 22:09:00 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (2.8ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:09:00 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:09:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:09:00 -0400
+
+
+Started GET "/assets/application.self-552969de46b3057237f541a2809e75f07aa8fdeadf551e397f60b1feeae46d7f.css?body=1" for ::1 at 2016-03-15 22:09:00 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:09:00 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:09:00 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:09:00 -0400
+
+
+Started GET "/assets/stock_photos/superman_thumbnail-77583b228548ec2e382abf30ac5aa58ddc301b4dbea407009e0d4e87a5da6a80.jpg" for ::1 at 2016-03-15 22:09:00 -0400
+
+
+Started GET "/" for ::1 at 2016-03-15 22:10:25 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (3.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-15 22:14:25 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (4.6ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:14:25 -0400
+
+
+Started GET "/assets/application.self-552969de46b3057237f541a2809e75f07aa8fdeadf551e397f60b1feeae46d7f.css?body=1" for ::1 at 2016-03-15 22:14:25 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:14:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:14:25 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:14:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:14:25 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:14:25 -0400
+
+
+Started GET "/assets/stock_photos/superman_thumbnail-77583b228548ec2e382abf30ac5aa58ddc301b4dbea407009e0d4e87a5da6a80.jpg" for ::1 at 2016-03-15 22:14:25 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for ::1 at 2016-03-15 22:14:25 -0400
+
+
+Started GET "/assets/stock_photos/The_Flash_thumbnail-cbf89e1679ab9c44b78a5931c36ff990571b1e3d1d88c6d648c7883d5471d6c8.jpg" for ::1 at 2016-03-15 22:14:25 -0400
+
+
+Started GET "/about" for ::1 at 2016-03-15 22:14:27 -0400
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-03-15 22:14:43 -0400
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:14:43 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:14:43 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:14:43 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:14:43 -0400
+
+
+Started GET "/assets/application.self-552969de46b3057237f541a2809e75f07aa8fdeadf551e397f60b1feeae46d7f.css?body=1" for ::1 at 2016-03-15 22:14:43 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:14:43 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:14:43 -0400
+
+
+Started GET "/about" for ::1 at 2016-03-15 22:15:10 -0400
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:15:10 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:15:10 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:15:10 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:15:10 -0400
+
+
+Started GET "/assets/application.self-552969de46b3057237f541a2809e75f07aa8fdeadf551e397f60b1feeae46d7f.css?body=1" for ::1 at 2016-03-15 22:15:10 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:15:10 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:15:10 -0400
+
+
+Started GET "/books/new" for ::1 at 2016-03-15 22:15:22 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-15 22:15:24 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors/new" for ::1 at 2016-03-15 22:15:25 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-03-15 22:15:26 -0400
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-15 22:15:28 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (3.9ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-15 22:17:12 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (3.6ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:17:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:17:12 -0400
+
+
+Started GET "/assets/application.self-552969de46b3057237f541a2809e75f07aa8fdeadf551e397f60b1feeae46d7f.css?body=1" for ::1 at 2016-03-15 22:17:12 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:17:12 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:17:12 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:17:12 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:17:12 -0400
+
+
+Started GET "/assets/stock_photos/superman_thumbnail-77583b228548ec2e382abf30ac5aa58ddc301b4dbea407009e0d4e87a5da6a80.jpg" for ::1 at 2016-03-15 22:17:12 -0400
+
+
+Started GET "/assets/stock_photos/The_Flash_thumbnail-cbf89e1679ab9c44b78a5931c36ff990571b1e3d1d88c6d648c7883d5471d6c8.jpg" for ::1 at 2016-03-15 22:17:12 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for ::1 at 2016-03-15 22:17:12 -0400
+
+
+Started GET "/about" for ::1 at 2016-03-15 22:17:14 -0400
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-03-15 22:17:15 -0400
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:17:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:17:15 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:17:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:17:15 -0400
+
+
+Started GET "/assets/application.self-552969de46b3057237f541a2809e75f07aa8fdeadf551e397f60b1feeae46d7f.css?body=1" for ::1 at 2016-03-15 22:17:15 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:17:15 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:17:15 -0400
+
+
+Started GET "/" for ::1 at 2016-03-15 22:17:27 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (3.7ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/1" for ::1 at 2016-03-15 22:17:28 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (2.1ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/1" for ::1 at 2016-03-15 22:17:57 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (1.9ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-552969de46b3057237f541a2809e75f07aa8fdeadf551e397f60b1feeae46d7f.css?body=1" for ::1 at 2016-03-15 22:17:58 -0400
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:17:58 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:17:58 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:17:58 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:17:58 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:17:58 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:17:58 -0400
+
+
+Started GET "/assets/stock_photos/superman_thumbnail-77583b228548ec2e382abf30ac5aa58ddc301b4dbea407009e0d4e87a5da6a80.jpg" for ::1 at 2016-03-15 22:17:58 -0400
+
+
+Started GET "/books/1" for ::1 at 2016-03-15 22:18:25 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-552969de46b3057237f541a2809e75f07aa8fdeadf551e397f60b1feeae46d7f.css?body=1" for ::1 at 2016-03-15 22:18:25 -0400
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:18:25 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:18:25 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:18:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:18:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:18:25 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:18:25 -0400
+
+
+Started GET "/assets/stock_photos/superman_thumbnail-77583b228548ec2e382abf30ac5aa58ddc301b4dbea407009e0d4e87a5da6a80.jpg" for ::1 at 2016-03-15 22:18:25 -0400
+
+
+Started GET "/books/1" for ::1 at 2016-03-15 22:18:46 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:18:46 -0400
+
+
+Started GET "/assets/application.self-552969de46b3057237f541a2809e75f07aa8fdeadf551e397f60b1feeae46d7f.css?body=1" for ::1 at 2016-03-15 22:18:46 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:18:46 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:18:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:18:46 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:18:46 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:18:46 -0400
+
+
+Started GET "/assets/stock_photos/superman_thumbnail-77583b228548ec2e382abf30ac5aa58ddc301b4dbea407009e0d4e87a5da6a80.jpg" for ::1 at 2016-03-15 22:18:46 -0400
+
+
+Started GET "/books/1" for ::1 at 2016-03-15 22:21:40 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (1.5ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:21:40 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:21:40 -0400
+
+
+Started GET "/assets/application.self-cfd6dd96ad162b3e4e3e390478f11d141cf3502c11491c66f9eedb5ec626f160.css?body=1" for ::1 at 2016-03-15 22:21:40 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:21:40 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:21:40 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:21:40 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:21:40 -0400
+
+
+Started GET "/assets/stock_photos/superman_thumbnail-77583b228548ec2e382abf30ac5aa58ddc301b4dbea407009e0d4e87a5da6a80.jpg" for ::1 at 2016-03-15 22:21:40 -0400
+
+
+Started GET "/books/1" for ::1 at 2016-03-15 22:22:20 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (1.5ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:22:20 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for ::1 at 2016-03-15 22:22:20 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:22:20 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:22:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:22:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:22:20 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:22:20 -0400
+
+
+Started GET "/assets/stock_photos/superman_thumbnail-77583b228548ec2e382abf30ac5aa58ddc301b4dbea407009e0d4e87a5da6a80.jpg" for ::1 at 2016-03-15 22:22:20 -0400
+
+
+Started GET "/books/1" for ::1 at 2016-03-15 22:46:06 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (1.9ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-15 22:46:06 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-15 22:46:06 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-15 22:46:06 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-15 22:46:06 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for ::1 at 2016-03-15 22:46:06 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-15 22:46:06 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-15 22:46:06 -0400
+
+
+Started GET "/assets/stock_photos/superman_thumbnail-77583b228548ec2e382abf30ac5aa58ddc301b4dbea407009e0d4e87a5da6a80.jpg" for ::1 at 2016-03-15 22:46:06 -0400
+
+
+Started GET "/books/new" for ::1 at 2016-03-15 22:46:09 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h2>Add New Book</h2>
+    2: 
+    3: <%= form_for @book do |f| %>
+    4: 
+    5: <div class="form-group">
+    6: <%= f.label :title %><br />
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4321997271127227861_70330119465280'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.8ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-15 22:46:09 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h2>Add New Book</h2>
+    2: 
+    3: <%= form_for @book do |f| %>
+    4: 
+    5: <div class="form-group">
+    6: <%= f.label :title %><br />
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4321997271127227861_70330119512260'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.3ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-15 22:51:09 -0400
+Processing by BooksController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant BooksController::Book):
+  app/controllers/books_controller.rb:3:in `new'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.2ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-15 23:02:04 -0400
+Processing by BooksController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant BooksController::Book):
+  app/controllers/books_controller.rb:4:in `new'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-15 23:02:06 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (3.6ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-15 23:02:07 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (3.7ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/1" for ::1 at 2016-03-15 23:02:11 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
