@@ -3895,3 +3895,2177 @@ Processing by BooksController#show as HTML
   Rendered books/show.html.erb within layouts/application (2.0ms)
   Rendered partials/_sidebar.html.erb (0.1ms)
 Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-16 19:08:24 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (689.9ms)
+  Rendered partials/_sidebar.html.erb (1.0ms)
+Completed 200 OK in 1060ms (Views: 1021.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for ::1 at 2016-03-16 19:08:26 -0400
+
+
+Started GET "/books/1" for ::1 at 2016-03-16 19:08:34 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (3.1ms)
+  Rendered partials/_sidebar.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (43.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (12.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCategories (20160316231427)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160316231427"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateBooks (20160316232331)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "category_id" integer, "author_id" integer, "publisher_id" integer, "isbn" varchar, "year" varchar, "price" varchar, "buy" varchar, "excerpt" text, "format" varchar, "pages" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160316232331"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateBooks (20160316232732)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "category_id" integer, "author_id" integer, "publisher_id" integer, "isbn" varchar, "year" varchar, "price" varchar, "buy" varchar, "excerpt" text, "format" varchar, "pages" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160316232732"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAuthors (20160316232839)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160316232839"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePublishers (20160316232903)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "publishers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160316232903"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mBook Load (1.7ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ruby on Rails"], ["created_at", "2016-03-16 23:39:47.711270"], ["updated_at", "2016-03-16 23:39:47.711270"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+
+
+Started GET "/" for ::1 at 2016-03-16 19:47:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (6.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Coding with Superman"], ["created_at", "2016-03-16 23:49:19.522580"], ["updated_at", "2016-03-16 23:49:19.522580"]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+
+
+Started GET "/books/1" for ::1 at 2016-03-16 20:10:18 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (1.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:10:37 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (119.3ms)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined local variable or method `catergory_id' for #<#<Class:0x007fe81bfb1a20>:0x007fe8224861f8>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, catergory_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317492152020'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317492152020'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (137.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:10:37 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (24.5ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `catergory_id' for #<#<Class:0x007fe81bfb1a20>:0x007fe81d6c09f0>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, catergory_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317451335420'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317451335420'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:10:47 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h2>Add New Category</h2>
+    2: 
+    3: <%= form_for @catergory do |f| %>
+    4: <div class="form-group">
+    5: <%= f.label :name %><br />
+    6: <%= f.text_field :name, class: 'form-control' %></br />
+  app/views/categories/new.html.erb:3:in `_app_views_categories_new_html_erb___102659530351122027_70317466045400'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.3ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:10:47 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h2>Add New Category</h2>
+    2: 
+    3: <%= form_for @catergory do |f| %>
+    4: <div class="form-group">
+    5: <%= f.label :name %><br />
+    6: <%= f.text_field :name, class: 'form-control' %></br />
+  app/views/categories/new.html.erb:3:in `_app_views_categories_new_html_erb___102659530351122027_70317498358780'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.7ms)
+
+
+Started GET "/authors/new" for ::1 at 2016-03-16 20:10:51 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (4.0ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 20:11:01 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (3.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:11:19 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (21.8ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `catergory_id' for #<#<Class:0x007fe81bfb1a20>:0x007fe81c0541f8>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, catergory_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317492152020'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317492152020'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (108.4ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:11:20 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (20.2ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `catergory_id' for #<#<Class:0x007fe81bfb1a20>:0x007fe822367560>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, catergory_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317451335420'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317451335420'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.5ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:14:09 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81bfb1a20>:0x007fe820ede440>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317480786220'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317480786220'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.2ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:15:41 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (21.5ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81bfb1a20>:0x007fe81bf41f40>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :name, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317439059000'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317439059000'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.3ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:16:27 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81bfb1a20>:0x007fe823943140>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :name, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317439059000'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317439059000'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.3ms)
+
+
+Started GET "/" for ::1 at 2016-03-16 20:16:29 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (4.9ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-16 20:16:29 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (4.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:16:32 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81bfb1a20>:0x007fe81e11cc00>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :name, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317492927360'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317492927360'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (109.3ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:16:32 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81bfb1a20>:0x007fe81f5310b0>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :name, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317439059000'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317439059000'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.7ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:22:52 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (17.4ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81f350d90>:0x007fe81f321658>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317466223380'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317466223380'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.7ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:24:43 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (23.1ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category' for #<#<Class:0x007fe81f350d90>:0x007fe822042650>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317489904220'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317489904220'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:28:31 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category' for #<#<Class:0x007fe81f350d90>:0x007fe8222d73e8>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317489904220'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317489904220'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.6ms)
+
+
+Started GET "/" for ::1 at 2016-03-16 20:28:32 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (3.7ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-16 20:28:33 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (3.5ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:28:36 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (2.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors/new" for ::1 at 2016-03-16 20:28:40 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (2.5ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 20:28:42 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (1.6ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:28:44 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category' for #<#<Class:0x007fe81f350d90>:0x007fe820bdd318>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317479178500'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317479178500'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.2ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:28:44 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (17.9ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category' for #<#<Class:0x007fe81f350d90>:0x007fe81bd17c88>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317489904220'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317489904220'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.5ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:29:17 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.9ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors/new" for ::1 at 2016-03-16 20:29:19 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (3.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 20:31:01 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:31:06 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (20.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category' for #<#<Class:0x007fe81f350d90>:0x007fe8220381c8>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317479178500'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317479178500'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:31:06 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category' for #<#<Class:0x007fe81f350d90>:0x007fe822218790>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317489904220'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317489904220'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.8ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:31:37 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:31:40 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (2.1ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors/new" for ::1 at 2016-03-16 20:31:43 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (2.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 20:31:45 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (2.4ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:31:47 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (21.7ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81f350d90>:0x007fe820f34110>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317480951160'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317480951160'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (109.5ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:31:48 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81f350d90>:0x007fe81beee548>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317438875740'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317438875740'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.4ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:34:10 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81f350d90>:0x007fe822287af0>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :book %><br />
+    17: <%= f.select :title, category_id, Book.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317491106460'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317491106460'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.6ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:35:02 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (15.9ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `book' for #<#<Class:0x007fe81f350d90>:0x007fe8238c1e10>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :book %><br />
+    17: <%= f.select :title, book, Book.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317502760160'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317502760160'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.6ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:35:23 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (23.0ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81f350d90>:0x007fe82247d508>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :Book %><br />
+    17: <%= f.select :title, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317492109240'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317492109240'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (165.5ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:35:49 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (23.2ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81f350d90>:0x007fe8227a4268>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :Book %><br />
+    17: <%= f.select :title, category_id, Book.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317498595140'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317498595140'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.7ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:38:43 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe822397328>:0x007fe82236efe0>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317491579520'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317491579520'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.7ms)
+
+
+Started GET "/" for ::1 at 2016-03-16 20:38:44 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (4.5ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-16 20:38:45 -0400
+Processing by BooksController#index as HTML
+  Rendered books/index.html.erb within layouts/application (3.5ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:38:48 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.4ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/categories" for ::1 at 2016-03-16 20:39:47 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"230puYxaoh1+/WYdyyRlSrMYuVQhjqhWGphZUjf3ME9sohlLDK51uRib/AkNhbNPCC2puax8bUw/ebq4npkyww==", "category"=>{"name"=>"Jessica Jones"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica Jones"], ["created_at", "2016-03-17 00:39:47.479917"], ["updated_at", "2016-03-17 00:39:47.479917"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/categories
+Completed 302 Found in 12ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/categories" for ::1 at 2016-03-16 20:39:47 -0400
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.7ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors/new" for ::1 at 2016-03-16 20:40:10 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (3.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/authors" for ::1 at 2016-03-16 20:41:54 -0400
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SaebtKtE4m9xMy/nVFakiWqaz2txtAkwGNVvJ2rCw0r+eKtGK7A1yxdVtfOS93KM0a/fhvxGzCo9NIzNw6zBxg==", "author"=>{"first_name"=>"Stan", "last_name"=>"Lee"}, "commit"=>"Submit"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["first_name", "Stan"], ["last_name", "Lee"], ["created_at", "2016-03-17 00:41:54.930869"], ["updated_at", "2016-03-17 00:41:54.930869"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 12ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/authors" for ::1 at 2016-03-16 20:41:54 -0400
+Processing by AuthorsController#index as HTML
+  Rendered authors/index.html.erb within layouts/application (0.7ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 20:43:46 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (1.4ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 22.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/publishers" for ::1 at 2016-03-16 20:44:27 -0400
+Processing by PublishersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wjyv19fpGthHWFkdbxpBtgjCWVepPpVbvNunrTLs63B1458lVx3NfCE+wwmpu5ezs/dJuiTMUEGZOkRHm4Lp/A==", "publisher"=>{"name"=>"Gotham Penguin"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Gotham Penguin"], ["created_at", "2016-03-17 00:44:27.659232"], ["updated_at", "2016-03-17 00:44:27.659232"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/publishers
+Completed 302 Found in 7ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/publishers" for ::1 at 2016-03-16 20:44:27 -0400
+Processing by PublishersController#index as HTML
+  Rendered publishers/index.html.erb within layouts/application (0.5ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:47:08 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.5ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 25.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/categories" for ::1 at 2016-03-16 20:53:32 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mPzT2YkgVGTXV7zrGzUpjEi/Xtwox95A5ux0nOjFo6AvI+MrCdSDwLExJv/dlP+J84pOMaU1G1rDDZd2QauhLA==", "category"=>{"name"=>""}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered categories/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.6ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/categories_controller.rb:13:in `create'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.6ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:54:48 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:54:49 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.5ms)
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 20:54:53 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.2ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:54:56 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (108.9ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:54:56 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.2ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:55:02 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (109.9ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:55:03 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:88: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:90: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.6ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:55:26 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:91: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:91: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.2ms)
+
+
+Started GET "/authors/new" for ::1 at 2016-03-16 20:55:33 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:91: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:91: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.9ms)
+
+
+Started GET "/authors/new" for ::1 at 2016-03-16 20:55:34 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:91: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:91: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.9ms)
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 20:55:40 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:91: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:91: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.0ms)
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 20:55:40 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:91: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:91: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.4ms)
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 20:57:14 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:66: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...er.append=( if flash[:notice] );@output_buffer.safe_append='...
+...                               ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:67: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;                 end 
+                             ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:70: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...fer.append=( if flash[:alert] );@output_buffer.safe_append='...
+...                               ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:71: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;                 end 
+                             ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:91: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/application.html.erb:66: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/layouts/application.html.erb:67: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:70: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/layouts/application.html.erb:71: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/application.html.erb:91: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.3ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:57:24 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (18.7ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81e1c4978>:0x007fe823cd0a60>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317491387140'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317491387140'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.4ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 20:57:24 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe81e1c4978>:0x007fe81e2dee30>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317491579520'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317491579520'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.6ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:57:29 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:66: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...er.append=( if flash[:notice] );@output_buffer.safe_append='...
+...                               ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:67: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;                 end 
+                             ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:70: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...fer.append=( if flash[:alert] );@output_buffer.safe_append='...
+...                               ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:71: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;                 end 
+                             ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:91: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/application.html.erb:66: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/layouts/application.html.erb:67: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:70: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/layouts/application.html.erb:71: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/application.html.erb:91: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (109.2ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:57:29 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:66: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...er.append=( if flash[:notice] );@output_buffer.safe_append='...
+...                               ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:67: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;                 end 
+                             ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:70: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...fer.append=( if flash[:alert] );@output_buffer.safe_append='...
+...                               ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:71: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;                 end 
+                             ^
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/delantebess/Google Drive/workspace/bookstore/app/views/layouts/application.html.erb:91: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/application.html.erb:66: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/layouts/application.html.erb:67: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:70: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/layouts/application.html.erb:71: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:89: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/application.html.erb:91: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (125.4ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 20:57:58 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-16 20:57:58 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-16 20:57:58 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for ::1 at 2016-03-16 20:57:58 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-16 20:57:58 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-16 20:57:58 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-16 20:57:58 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-16 20:57:58 -0400
+
+
+Started POST "/categories" for ::1 at 2016-03-16 20:58:16 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kaKfkj0oBOGQBpanwfqXMckFnM2RDfJWu1BF6PJyx4Amfa9gvdzTRfZgDLMHW0E0cjCMIBz/N0yesaYCWxzFDA==", "category"=>{"name"=>""}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered categories/new.html.erb within layouts/application (1.5ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/categories" for ::1 at 2016-03-16 20:58:56 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4kafW4DxmFLwWbVydDwJoe+VUufkgRi676/1cU3JL+tVma+pAAVP9pY/L2aynd+kVKBCCmlz3aDKThab5KctZw==", "category"=>{"name"=>"Superheroes"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Superheroes"], ["created_at", "2016-03-17 00:58:56.874950"], ["updated_at", "2016-03-17 00:58:56.874950"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/categories
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/categories" for ::1 at 2016-03-16 20:58:56 -0400
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for ::1 at 2016-03-16 21:41:32 -0400
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-16 21:41:32 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-16 21:41:32 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-16 21:41:32 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-16 21:41:32 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for ::1 at 2016-03-16 21:41:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-16 21:41:32 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-16 21:41:32 -0400
+
+
+Started GET "/categories" for ::1 at 2016-03-16 21:41:33 -0400
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-16 21:41:33 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-16 21:41:33 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for ::1 at 2016-03-16 21:41:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-16 21:41:33 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-16 21:41:33 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-16 21:41:33 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-16 21:41:33 -0400
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 21:41:36 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (1.7ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/categories" for ::1 at 2016-03-16 21:41:40 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7+lgTNWF3/9/UKsUrQDIC6KvSj6asrvLeeAMdnPjfmpYNlC+VXEIWxk2MQBroR4OGZpa0xdAftFcAe+c2o185g==", "category"=>{"name"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered categories/new.html.erb within layouts/application (2.4ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/authors/new" for ::1 at 2016-03-16 21:47:10 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (2.5ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 29.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/authors" for ::1 at 2016-03-16 21:47:12 -0400
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t2VL6wu3fG5RufEu9tx3z4X4riLHNp4HCKL5t/b+6GsAunsZi0OryjffazowfaHKPs2+z0rEWx0tQxpdX5Dq5w==", "author"=>{"first_name"=>"", "last_name"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered authors/new.html.erb within layouts/application (4.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Redirected to 
+Completed 500 Internal Server Error in 52ms (Views: 40.0ms | ActiveRecord: 0.5ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/authors_controller.rb:17:in `create'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (115.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (88.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (174.5ms)
+
+
+Started POST "/authors" for ::1 at 2016-03-16 21:48:48 -0400
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t2VL6wu3fG5RufEu9tx3z4X4riLHNp4HCKL5t/b+6GsAunsZi0OryjffazowfaHKPs2+z0rEWx0tQxpdX5Dq5w==", "author"=>{"first_name"=>"", "last_name"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered authors/new.html.erb within layouts/application (2.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 35.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-16 21:48:48 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for ::1 at 2016-03-16 21:48:48 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-16 21:48:48 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-16 21:48:48 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-16 21:48:48 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-16 21:48:48 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-16 21:48:48 -0400
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 21:57:31 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (2.6ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/publishers" for ::1 at 2016-03-16 21:57:33 -0400
+Processing by PublishersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sM72Za5DFKS/hAwrdZNt93Ntp4wKqPSFUssOgbzAQpdHAsrFk3b9vSYiiRrd5uyZvimc73YZsgwqs/Qr50Dhg==", "publisher"=>{"name"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered publishers/new.html.erb within layouts/application (1.4ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 21:57:39 -0400
+Processing by BooksController#new as HTML
+  Rendered books/new.html.erb within layouts/application (18.4ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `category_id' for #<#<Class:0x007fe823b6cb88>:0x007fe823b689c0>):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317491579520'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317491579520'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.3ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 22:25:26 -0400
+Processing by BooksController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered books/new.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (wrong number of arguments (5 for 1..4)):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317521114060'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317521114060'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.8ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 22:26:13 -0400
+Processing by BooksController#new as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered books/new.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (wrong number of arguments (5 for 1..4)):
+    14: 
+    15: <div class="form-group">
+    16: <%= f.label :category %><br />
+    17: <%= f.select :title, :category_id, Category.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    18: </div>
+    19: 
+    20: <div class="form-group">
+  app/views/books/new.html.erb:17:in `block in _app_views_books_new_html_erb___4168456741169561198_70317498352580'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317498352580'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.3ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 22:27:24 -0400
+Processing by BooksController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered books/new.html.erb within layouts/application (20.6ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `name' for #<Author:0x007fe823395bd0>):
+    19: 
+    20: <div class="form-group">
+    21: <%= f.label :Author %><br />
+    22: <%= f.select :author_id, Author.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'form-control' %></br /><br />
+    23: </div>
+    24: 
+    25: <div class="form-group">
+  app/views/books/new.html.erb:22:in `block (2 levels) in _app_views_books_new_html_erb___4168456741169561198_70317516753440'
+  app/views/books/new.html.erb:22:in `block in _app_views_books_new_html_erb___4168456741169561198_70317516753440'
+  app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___4168456741169561198_70317516753440'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 22:28:08 -0400
+Processing by BooksController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  [1m[35mPublisher Load (0.1ms)[0m  SELECT "publishers".* FROM "publishers"
+  Rendered books/new.html.erb within layouts/application (10.2ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-16 22:28:08 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for ::1 at 2016-03-16 22:28:08 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-16 22:28:08 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-16 22:28:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-16 22:28:08 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-16 22:28:08 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-16 22:28:08 -0400
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 22:28:49 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (2.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 22:29:06 -0400
+Processing by BooksController#new as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT "authors".* FROM "authors"
+  [1m[36mPublisher Load (0.1ms)[0m  [1mSELECT "publishers".* FROM "publishers"[0m
+  Rendered books/new.html.erb within layouts/application (12.6ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCoverpathToBooks (20160317023351)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "books" ADD "coverpath" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160317023351"]]
+  [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 22:35:28 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by BooksController#new as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors"
+  [1m[36mPublisher Load (0.2ms)[0m  [1mSELECT "publishers".* FROM "publishers"[0m
+  Rendered books/new.html.erb within layouts/application (9.2ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 60ms (Views: 33.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-16 22:35:28 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-16 22:35:28 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for ::1 at 2016-03-16 22:35:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-16 22:35:28 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-16 22:35:28 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-16 22:35:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-16 22:35:28 -0400
+
+
+Started POST "/books" for ::1 at 2016-03-16 22:45:21 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QxJdlO8asAYJT4wLWV9//uZDOrSBi8iKqdjGuFc6CQD0zW1mb+5nom8pFh+f/qn7XXYqWQx5DZCMOSVS/lQLjA==", "book"=>{"title"=>"Coding with Spiderman", "isbn"=>"424324", "category_id"=>"6", "author_id"=>"1", "publisher_id"=>"1", "format"=>"paper", "year"=>"2016", "coverpath"=>"", "excerpt"=>"May the force be with you", "pages"=>"346", "price"=>"$0.99", "buy"=>"http://www.amazon.com"}, "commit"=>"Submit"}
+Unpermitted parameters: coverpath, buy
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "books" ("title", "category_id", "author_id", "publisher_id", "isbn", "price", "format", "excerpt", "pages", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Coding with Spiderman"], ["category_id", 6], ["author_id", 1], ["publisher_id", 1], ["isbn", "424324"], ["price", "$0.99"], ["format", "paper"], ["excerpt", "May the force be with you"], ["pages", 346], ["year", "2016"], ["created_at", "2016-03-17 02:45:21.310239"], ["updated_at", "2016-03-17 02:45:21.310239"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/books
+Completed 302 Found in 22ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/books" for ::1 at 2016-03-16 22:45:21 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `title' for #<Array:0x007fe8230ef1b0>):
+    2: <% @books.each_slice(3) do |book| %>
+    3: <div class ="row">
+    4:         <div class="col-md-3 col-sm-3">
+    5:             <h3><%= book.title %></h3>
+    6:             <%= image_tag(book.coverpath) %>
+    7:                 <%= link_to 'Read More', book_path(book), class:'btn btn-primary' %>
+    8:                 </div>
+  app/views/books/index.html.erb:5:in `block in _app_views_books_index_html_erb___271099472125782558_70317498672460'
+  app/views/books/index.html.erb:2:in `_app_views_books_index_html_erb___271099472125782558_70317498672460'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.4ms)
+
+
+Started GET "/books" for ::1 at 2016-03-16 22:49:05 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (1.6ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-16 22:49:05 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-16 22:49:05 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-16 22:49:05 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for ::1 at 2016-03-16 22:49:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-16 22:49:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-16 22:49:05 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-16 22:49:05 -0400
+
+
+Started GET "/books/1" for ::1 at 2016-03-16 22:49:14 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (2.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2016-03-16 22:52:53 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.1ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for ::1 at 2016-03-16 22:52:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-16 22:52:53 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-16 22:52:53 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-16 22:52:53 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-16 22:52:53 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for ::1 at 2016-03-16 22:52:53 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-03-16 22:52:53 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for ::1 at 2016-03-16 22:52:53 -0400
+
+
+Started GET "/authors/new" for ::1 at 2016-03-16 22:53:14 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (3.5ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 58ms (Views: 51.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/1" for ::1 at 2016-03-16 22:56:59 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered books/show.html.erb within layouts/application (1.7ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-03-16 22:59:57 -0400
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.8ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for ::1 at 2016-03-16 23:00:11 -0400
+Processing by BooksController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  [1m[35mPublisher Load (0.1ms)[0m  SELECT "publishers".* FROM "publishers"
+  Rendered books/new.html.erb within layouts/application (10.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 46.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories/new" for ::1 at 2016-03-16 23:00:15 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (2.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors/new" for ::1 at 2016-03-16 23:00:20 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (1.9ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publishers/new" for ::1 at 2016-03-16 23:00:25 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (1.9ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
