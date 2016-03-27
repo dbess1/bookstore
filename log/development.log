@@ -8073,3 +8073,2049 @@ Processing by BooksController#index as HTML
   [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
   Rendered partials/_sidebar.html.erb (1.8ms)
 Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 12:56:34 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.5ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.3ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 12:56:34 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 12:56:34 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 12:56:34 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 12:56:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 12:56:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 12:56:35 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 12:56:35 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 12:56:35 -0400
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 12:56:54 -0400
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2016-03-27 12:56:57 -0400
+Processing by AuthorsController#index as HTML
+  Rendered authors/index.html.erb within layouts/application (0.5ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 12:57:03 -0400
+Processing by PublishersController#index as HTML
+  Rendered publishers/index.html.erb within layouts/application (0.6ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:03:31 -0400
+Processing by PublishersController#index as HTML
+  Rendered publishers/index.html.erb within layouts/application (0.4ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:03:31 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:03:31 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:03:31 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:03:31 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:03:31 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:03:31 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:03:31 -0400
+
+
+Started GET "/authors" for 127.0.0.1 at 2016-03-27 13:03:36 -0400
+Processing by AuthorsController#index as HTML
+  Rendered authors/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2016-03-27 13:03:37 -0400
+Processing by AuthorsController#index as HTML
+  Rendered authors/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:03:37 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories/1/edit" for 127.0.0.1 at 2016-03-27 13:03:49 -0400
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendered categories/edit.html.erb within layouts/application (0.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/2/edit" for 127.0.0.1 at 2016-03-27 13:03:51 -0400
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendered categories/edit.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/categories/7" for 127.0.0.1 at 2016-03-27 13:03:59 -0400
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eTR4YYC983qN+C2PibS1oQdvFD2nPRWdgjCkKHyHc36N6mRBsv3gTkZfthkZAg4/7h9Th4Q24vnubb4k5nLlhQ==", "id"=>"7"}
+  Rendered categories/destroy.html.erb within layouts/application (0.4ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/categories/7" for 127.0.0.1 at 2016-03-27 13:04:05 -0400
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eTR4YYC983qN+C2PibS1oQdvFD2nPRWdgjCkKHyHc36N6mRBsv3gTkZfthkZAg4/7h9Th4Q24vnubb4k5nLlhQ==", "id"=>"7"}
+  Rendered categories/destroy.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:04:05 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:04:05 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:04:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:04:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:04:05 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:04:05 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:04:05 -0400
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:04:11 -0400
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:04:11 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:04:11 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:04:11 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:04:11 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:04:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:04:11 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:04:11 -0400
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:06:04 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:06:04 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:06:04 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:06:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:06:04 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:06:04 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:06:04 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:06:04 -0400
+
+
+Started DELETE "/categories/7" for 127.0.0.1 at 2016-03-27 13:06:07 -0400
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yPHSidm9h2pliU0qFuai+vZH1WYiTFRg/pfha6EkUtk8L86p6/2UXq4u1ryGUBlkHzeS3AFHowSSyvtnO9HEIg==", "id"=>"7"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 7]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  app/controllers/categories_controller.rb:25:in `destroy'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:06:37 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.8ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/categories/7" for 127.0.0.1 at 2016-03-27 13:06:40 -0400
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bm9CLnwWj7lwD9jakU2vXw0OyNIrt3DuUNO5kcM+6QzysV4OTlacjbuoQ0wB+xTB5H6PaAi8h4o8jqOdWct/9w==", "id"=>"7"}
+  [1m[35mCategory Load (0.3ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "categories" WHERE "categories"."id" = ?  [["id", 7]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/categories
+Completed 302 Found in 7ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:06:40 -0400
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (2.8ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 13:06:45 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (26.9ms)
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.3ms)
+Completed 200 OK in 63ms (Views: 58.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2016-03-27 13:06:47 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered books/show.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     6: <div class="books-show-right">
+     7: <h3>Book Info:</h3>
+     8: <ul>
+     9: 	<li><strong>Category: </strong><%= @book.category.name %></li>
+    10: 	<li><strong>Author: </strong><%= @book.author.first_name %> <%= @book.author.last_name %></li>
+    11: 	<li><strong>Publisher: </strong><%= @book.publisher.name %></li>
+    12: 	<li><strong>Year: </strong><%= @book.year %></li>
+  app/views/books/show.html.erb:9:in `_app_views_books_show_html_erb__1196518229503819756_70149575528020'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.2ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2016-03-27 13:06:47 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered books/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     6: <div class="books-show-right">
+     7: <h3>Book Info:</h3>
+     8: <ul>
+     9: 	<li><strong>Category: </strong><%= @book.category.name %></li>
+    10: 	<li><strong>Author: </strong><%= @book.author.first_name %> <%= @book.author.last_name %></li>
+    11: 	<li><strong>Publisher: </strong><%= @book.publisher.name %></li>
+    12: 	<li><strong>Year: </strong><%= @book.year %></li>
+  app/views/books/show.html.erb:9:in `_app_views_books_show_html_erb__1196518229503819756_70149533691580'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:10:59 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (8.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/5/edit" for 127.0.0.1 at 2016-03-27 13:11:33 -0400
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered categories/edit.html.erb within layouts/application (2.5ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 28.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:11:37 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (1.8ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories/6/edit" for 127.0.0.1 at 2016-03-27 13:11:39 -0400
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered categories/edit.html.erb within layouts/application (1.1ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/categories/6" for 127.0.0.1 at 2016-03-27 13:11:51 -0400
+Processing by CategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"22KQ5p8PI9F9x9Haenwh1Qt+tt3PVKKB/VJw3genNqovvIzGrU8w5bZgSkzqyppL4g7xZ+xfVeWRD2rSnVKgUQ==", "category"=>{"name"=>"Superhero Coding Books"}, "commit"=>"Submit", "id"=>"6"}
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 6]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `update' for nil:NilClass):
+  app/controllers/categories_controller.rb:19:in `update'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.4ms)
+
+
+Started PATCH "/categories/6" for 127.0.0.1 at 2016-03-27 13:12:16 -0400
+Processing by CategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"22KQ5p8PI9F9x9Haenwh1Qt+tt3PVKKB/VJw3genNqovvIzGrU8w5bZgSkzqyppL4g7xZ+xfVeWRD2rSnVKgUQ==", "category"=>{"name"=>"Superhero Coding Books"}, "commit"=>"Submit", "id"=>"6"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 6]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.6ms)
+
+NameError (undefined local variable or method `categories_params' for #<CategoriesController:0x007f99f23145c8>):
+  app/controllers/categories_controller.rb:19:in `update'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.0ms)
+
+
+Started PATCH "/categories/6" for 127.0.0.1 at 2016-03-27 13:13:26 -0400
+Processing by CategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"22KQ5p8PI9F9x9Haenwh1Qt+tt3PVKKB/VJw3genNqovvIzGrU8w5bZgSkzqyppL4g7xZ+xfVeWRD2rSnVKgUQ==", "category"=>{"name"=>"Superhero Coding Books"}, "commit"=>"Submit", "id"=>"6"}
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "categories" SET "name" = ?, "updated_at" = ? WHERE "categories"."id" = ?[0m  [["name", "Superhero Coding Books"], ["updated_at", "2016-03-27 17:13:26.432437"], ["id", 6]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.9ms)
+
+NameError (undefined local variable or method `catergories_path' for #<CategoriesController:0x007f99f10c86f8>):
+  app/controllers/categories_controller.rb:21:in `update'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.7ms)
+
+
+Started PATCH "/categories/6" for 127.0.0.1 at 2016-03-27 13:13:33 -0400
+Processing by CategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"22KQ5p8PI9F9x9Haenwh1Qt+tt3PVKKB/VJw3genNqovvIzGrU8w5bZgSkzqyppL4g7xZ+xfVeWRD2rSnVKgUQ==", "category"=>{"name"=>"Superhero Coding Books"}, "commit"=>"Submit", "id"=>"6"}
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/categories
+Completed 302 Found in 19ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:13:34 -0400
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:13:34 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:13:34 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:13:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:13:34 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:13:34 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:13:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:13:34 -0400
+
+
+Started GET "/categories/6/edit" for 127.0.0.1 at 2016-03-27 13:13:55 -0400
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered categories/edit.html.erb within layouts/application (3.9ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/categories/6" for 127.0.0.1 at 2016-03-27 13:14:00 -0400
+Processing by CategoriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NhSg6uleEjWOhAH4056cioxd125i2Gmq9VIrC0toZULCyrzK2x4BAUUjmm5DKCcUZS2Q1EHTns6ZDzEH0Z3zuQ==", "category"=>{"name"=>"Superhero Coding Books"}, "commit"=>"Submit", "id"=>"6"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/categories
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:14:00 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (2.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:14:09 -0400
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (1.6ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:14:09 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:14:09 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:14:09 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:14:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:14:09 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:14:09 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:14:09 -0400
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:20:19 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (5.2ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:20:19 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:20:19 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:20:19 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:20:19 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:20:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:20:19 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:20:19 -0400
+
+
+Started GET "/authors" for 127.0.0.1 at 2016-03-27 13:20:22 -0400
+Processing by AuthorsController#index as HTML
+  Rendered authors/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2016-03-27 13:23:29 -0400
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (5.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:23:29 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:23:29 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:23:29 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:23:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:23:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:23:29 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:23:30 -0400
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2016-03-27 13:23:41 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (4.2ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2016-03-27 13:23:47 -0400
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BUoiR2e9VDjQ16EemZAK62qZvEoC35VXZTI27wS/KmjxlD5nVf1HDBtwOogJJrF1g+n78CHUYjMJbyzjnkq8kw==", "author"=>{"first_name"=>"Delante", "last_name"=>"Bess"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["first_name", "Delante"], ["last_name", "Bess"], ["created_at", "2016-03-27 17:23:47.125749"], ["updated_at", "2016-03-27 17:23:47.125749"]]
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 12ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2016-03-27 13:23:47 -0400
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (1.3ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/3/edit" for 127.0.0.1 at 2016-03-27 13:23:51 -0400
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered authors/edit.html.erb within layouts/application (2.4ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/authors/3" for 127.0.0.1 at 2016-03-27 13:23:56 -0400
+Processing by AuthorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6irqG/1CqoXg3wkcsxH/WG1ZQH64Rwjg8QLpkpRbxCke9PY7zwK5sSt4koojp0TGhCkHxJtM/4SdX/OeDq5S0g==", "author"=>{"first_name"=>"Delante Lee", "last_name"=>"Bess"}, "commit"=>"Submit", "id"=>"3"}
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "authors" SET "first_name" = ?, "updated_at" = ? WHERE "authors"."id" = ?  [["first_name", "Delante Lee"], ["updated_at", "2016-03-27 17:23:56.483029"], ["id", 3]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 7ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2016-03-27 13:23:56 -0400
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (1.4ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/authors/3" for 127.0.0.1 at 2016-03-27 13:23:59 -0400
+Processing by AuthorsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jg6gJlBzGPZAIx2lKAokk27aFIEAem1x6xNv5mXJCOB60LwGYjMLwouEhjO4vJ8Nh6pTOyNxmhWHTnXq/zyeGw==", "id"=>"3"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 3]]
+  [1m[35m (263.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/categories
+Completed 302 Found in 267ms (ActiveRecord: 264.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-27 13:23:59 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (1.7ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2016-03-27 13:24:12 -0400
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (2.8ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:28:23 -0400
+Processing by PublishersController#index as HTML
+  Rendered publishers/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:28:25 -0400
+Processing by PublishersController#index as HTML
+  Rendered publishers/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:28:25 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:28:25 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:28:25 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:28:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:28:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:28:25 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:28:25 -0400
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:28:30 -0400
+Processing by PublishersController#index as HTML
+  Rendered publishers/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:28:30 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:28:30 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:28:30 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:28:30 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:28:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:28:30 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:28:30 -0400
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:30:36 -0400
+Processing by PublishersController#index as HTML
+  Rendered publishers/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9: 		</th>
+    10: 	</tr>
+    11: 
+    12: <% @publishers.each do |publisher| %>
+    13: <tr>
+    14: 	<td><%= publisher.name %></td>
+    15: 	<td><%= link_to 'Edit', edit_publisher_path(publisher.id) %> | <%= link_to 'Delete', publisher_path(publisher), method: :delete, data: {confirm: 'Are you sure?'} %></td>
+  app/views/publishers/index.html.erb:12:in `_app_views_publishers_index_html_erb__4070467375241082046_70149577459340'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.1ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:31:02 -0400
+Processing by PublishersController#index as HTML
+  [1m[36mPublisher Load (0.5ms)[0m  [1mSELECT "publishers".* FROM "publishers"[0m
+  Rendered publishers/index.html.erb within layouts/application (5.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:31:02 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:31:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:31:02 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:31:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:31:02 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:31:02 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:31:02 -0400
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:32:31 -0400
+Processing by PublishersController#index as HTML
+  Rendered publishers/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9: 		</th>
+    10: 	</tr>
+    11: 
+    12: <% @publishers.each do |publisher| %>
+    13: <tr>
+    14: 	<td><%= publisher.name %></td>
+    15: 	<td><%= link_to 'Edit', edit_publisher_path(publisher.id) %> | <%= link_to 'Delete', publisher_path(publisher), method: :delete, data: {confirm: 'Are you sure?'} %></td>
+  app/views/publishers/index.html.erb:12:in `_app_views_publishers_index_html_erb__4070467375241082046_70149584726480'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (151.0ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:32:46 -0400
+Processing by PublishersController#index as HTML
+  [1m[35mPublisher Load (0.2ms)[0m  SELECT "publishers".* FROM "publishers"
+  Rendered publishers/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:32:47 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:32:47 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:32:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:32:47 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:32:47 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:32:47 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:32:47 -0400
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:32:54 -0400
+Processing by PublishersController#index as HTML
+  [1m[36mPublisher Load (0.1ms)[0m  [1mSELECT "publishers".* FROM "publishers"[0m
+  Rendered publishers/index.html.erb within layouts/application (1.5ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/publishers/new" for 127.0.0.1 at 2016-03-27 13:32:57 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (3.1ms)
+  Rendered partials/_sidebar.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/publishers" for 127.0.0.1 at 2016-03-27 13:33:04 -0400
+Processing by PublishersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0DkIqAR3GUbYVDXgWm93jDtS3OEedBwLCC6g9DT0Ru4k5xSINjcKchPzrnbK2cwS0iKbWz1/629kc7r4rgHQFQ==", "publisher"=>{"name"=>"Testing Publisher"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Testing Publisher"], ["created_at", "2016-03-27 17:33:04.378928"], ["updated_at", "2016-03-27 17:33:04.378928"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/publishers
+Completed 302 Found in 8ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:33:04 -0400
+Processing by PublishersController#index as HTML
+  [1m[36mPublisher Load (0.2ms)[0m  [1mSELECT "publishers".* FROM "publishers"[0m
+  Rendered publishers/index.html.erb within layouts/application (1.2ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/publishers/2/edit" for 127.0.0.1 at 2016-03-27 13:33:06 -0400
+Processing by PublishersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPublisher Load (0.2ms)[0m  SELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered publishers/edit.html.erb within layouts/application (1.8ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/publishers/2" for 127.0.0.1 at 2016-03-27 13:33:09 -0400
+Processing by PublishersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k5uojy0G3rwNlS0ypgtReilJFOobFGEneEEV5wxp4AFnRbSvH0bNiMYytqQ2verkwDlTUDgflkMUHA/rlpx2+g==", "publisher"=>{"name"=>"Testing Publisher again"}, "commit"=>"Submit", "id"=>"2"}
+  [1m[36mPublisher Load (0.1ms)[0m  [1mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "publishers" SET "name" = ?, "updated_at" = ? WHERE "publishers"."id" = ?[0m  [["name", "Testing Publisher again"], ["updated_at", "2016-03-27 17:33:09.880618"], ["id", 2]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/publishers/2
+Completed 302 Found in 6ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/publishers/2" for 127.0.0.1 at 2016-03-27 13:33:09 -0400
+Processing by PublishersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered publishers/show.html.erb within layouts/application (0.4ms)
+  Rendered partials/_sidebar.html.erb (2.2ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:  <% end %>
+    13:  <% if params[:controller] == 'books' && params[:action] == 'index' || params[:action] == 'show' %>
+    14:  <div class="list-group">
+    15:  <% @categories.each do |category| %>
+    16:  <%= link_to category.name, category_path(category.id), class:'list-group-item' %>
+    17:  <% end %>
+    18: </div>
+  app/views/partials/_sidebar.html.erb:15:in `_app_views_partials__sidebar_html_erb___388801609076198861_70149578065100'
+  app/views/layouts/application.html.erb:93:in `_app_views_layouts_application_html_erb___506103921993041521_70149564165520'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (125.3ms)
+
+
+Started GET "/publishers/2/edit" for 127.0.0.1 at 2016-03-27 13:34:07 -0400
+Processing by PublishersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPublisher Load (0.2ms)[0m  [1mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered publishers/edit.html.erb within layouts/application (2.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/publishers/2/edit" for 127.0.0.1 at 2016-03-27 13:35:37 -0400
+Processing by PublishersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPublisher Load (0.1ms)[0m  SELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered publishers/edit.html.erb within layouts/application (3.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 31.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:35:37 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:35:37 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:35:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:35:37 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:35:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:35:37 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:35:37 -0400
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:35:41 -0400
+Processing by PublishersController#index as HTML
+  [1m[36mPublisher Load (0.3ms)[0m  [1mSELECT "publishers".* FROM "publishers"[0m
+  Rendered publishers/index.html.erb within layouts/application (24.4ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `edit_publishers_path' for #<#<Class:0x007f99f30434d8>:0x007f99eaebf998>):
+    12: <% @publisher.each do |publisher| %>
+    13: <tr>
+    14: 	<td><%= publisher.name %></td>
+    15: 	<td><%= link_to 'Edit', edit_publishers_path(publisher.id) %> | <%= link_to 'Delete', publisher_path(publisher), method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    16: </tr>
+    17: <% end %>
+    18: </table>
+  app/views/publishers/index.html.erb:15:in `block in _app_views_publishers_index_html_erb__4070467375241082046_70149524026140'
+  app/views/publishers/index.html.erb:12:in `_app_views_publishers_index_html_erb__4070467375241082046_70149524026140'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (115.8ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:35:41 -0400
+Processing by PublishersController#index as HTML
+  [1m[35mPublisher Load (0.3ms)[0m  SELECT "publishers".* FROM "publishers"
+  Rendered publishers/index.html.erb within layouts/application (21.6ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `edit_publishers_path' for #<#<Class:0x007f99f30434d8>:0x007f99f212c828>):
+    12: <% @publisher.each do |publisher| %>
+    13: <tr>
+    14: 	<td><%= publisher.name %></td>
+    15: 	<td><%= link_to 'Edit', edit_publishers_path(publisher.id) %> | <%= link_to 'Delete', publisher_path(publisher), method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    16: </tr>
+    17: <% end %>
+    18: </table>
+  app/views/publishers/index.html.erb:15:in `block in _app_views_publishers_index_html_erb__4070467375241082046_70149523057680'
+  app/views/publishers/index.html.erb:12:in `_app_views_publishers_index_html_erb__4070467375241082046_70149523057680'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.8ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:35:52 -0400
+Processing by PublishersController#index as HTML
+  [1m[36mPublisher Load (0.2ms)[0m  [1mSELECT "publishers".* FROM "publishers"[0m
+  Rendered publishers/index.html.erb within layouts/application (2.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:35:52 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:35:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:35:52 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:35:52 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:35:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:35:52 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:35:52 -0400
+
+
+Started DELETE "/publishers/2" for 127.0.0.1 at 2016-03-27 13:35:57 -0400
+Processing by PublishersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cmbstOE3TLXeseer73fAMKQOjY50DsDFSGXZSZxcc/qGuPCU03dfgRUWfD1/wXuuTX7KNFcFN6EkOMNFBqnlAQ==", "id"=>"2"}
+  [1m[35mPublisher Load (0.1ms)[0m  SELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "publishers" WHERE "publishers"."id" = ?  [["id", 2]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/publishers/2
+Completed 302 Found in 7ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/publishers/2" for 127.0.0.1 at 2016-03-27 13:35:57 -0400
+Processing by PublishersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered publishers/show.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidebar.html.erb (2.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:  <% end %>
+    13:  <% if params[:controller] == 'books' && params[:action] == 'index' || params[:action] == 'show' %>
+    14:  <div class="list-group">
+    15:  <% @categories.each do |category| %>
+    16:  <%= link_to category.name, category_path(category.id), class:'list-group-item' %>
+    17:  <% end %>
+    18: </div>
+  app/views/partials/_sidebar.html.erb:15:in `_app_views_partials__sidebar_html_erb___388801609076198861_70149578065100'
+  app/views/layouts/application.html.erb:93:in `_app_views_layouts_application_html_erb___506103921993041521_70149564165520'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (125.7ms)
+
+
+Started GET "/publishers/2" for 127.0.0.1 at 2016-03-27 13:37:08 -0400
+Processing by PublishersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered publishers/show.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (3.7ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:  <% end %>
+    13:  <% if params[:controller] == 'books' && params[:action] == 'index' || params[:action] == 'show' %>
+    14:  <div class="list-group">
+    15:  <% @category.each do |category| %>
+    16:  <%= link_to category.name, category_path(category.id), class:'list-group-item' %>
+    17:  <% end %>
+    18: </div>
+  app/views/partials/_sidebar.html.erb:15:in `_app_views_partials__sidebar_html_erb___388801609076198861_70149585853640'
+  app/views/layouts/application.html.erb:93:in `_app_views_layouts_application_html_erb___506103921993041521_70149564165520'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.1ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:39:27 -0400
+Processing by PublishersController#index as HTML
+  [1m[35mPublisher Load (0.2ms)[0m  SELECT "publishers".* FROM "publishers"
+  Rendered publishers/index.html.erb within layouts/application (2.3ms)
+  Rendered partials/_sidebar.html.erb (0.9ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:39:33 -0400
+Processing by PublishersController#index as HTML
+  [1m[36mPublisher Load (0.2ms)[0m  [1mSELECT "publishers".* FROM "publishers"[0m
+  Rendered publishers/index.html.erb within layouts/application (1.4ms)
+  Rendered partials/_sidebar.html.erb (0.6ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:39:33 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:39:33 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:39:33 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:39:33 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:39:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:39:33 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:39:33 -0400
+
+
+Started GET "/publishers/new" for 127.0.0.1 at 2016-03-27 13:42:40 -0400
+Processing by PublishersController#new as HTML
+  Rendered publishers/new.html.erb within layouts/application (1.7ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 33.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/publishers" for 127.0.0.1 at 2016-03-27 13:42:56 -0400
+Processing by PublishersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1IWO40P4qx6abyKJoUhkm0RDkZsWx9s7FRi1mS3Tm14gW5LDcbi4KlHIuR8x/t8FrTPWITXMLF95Ra+VtyYNpQ==", "publisher"=>{"name"=>"Testing Publisher"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Testing Publisher"], ["created_at", "2016-03-27 17:42:56.861653"], ["updated_at", "2016-03-27 17:42:56.861653"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/publishers
+Completed 302 Found in 9ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:42:56 -0400
+Processing by PublishersController#index as HTML
+  [1m[36mPublisher Load (0.2ms)[0m  [1mSELECT "publishers".* FROM "publishers"[0m
+  Rendered publishers/index.html.erb within layouts/application (1.5ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/publishers/3/edit" for 127.0.0.1 at 2016-03-27 13:42:59 -0400
+Processing by PublishersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPublisher Load (0.4ms)[0m  SELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered publishers/edit.html.erb within layouts/application (1.2ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/publishers/3" for 127.0.0.1 at 2016-03-27 13:43:04 -0400
+Processing by PublishersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"64DSRO1IkGSTEmhcmVGjfibzqe6D7k2PsynKDdDSweAfXs5k3wiDUFi188oJ5xjgz4PuVKDluuvfdNABSidXGw==", "publisher"=>{"name"=>"Testing Publisher Again"}, "commit"=>"Submit", "id"=>"3"}
+  [1m[36mPublisher Load (0.2ms)[0m  [1mSELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "publishers" SET "name" = ?, "updated_at" = ? WHERE "publishers"."id" = ?[0m  [["name", "Testing Publisher Again"], ["updated_at", "2016-03-27 17:43:04.835473"], ["id", 3]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/publishers
+Completed 302 Found in 8ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:43:04 -0400
+Processing by PublishersController#index as HTML
+  [1m[36mPublisher Load (0.1ms)[0m  [1mSELECT "publishers".* FROM "publishers"[0m
+  Rendered publishers/index.html.erb within layouts/application (1.2ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/publishers/3" for 127.0.0.1 at 2016-03-27 13:43:10 -0400
+Processing by PublishersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hqHNN8Ijv3HdpbNsMXnT8ahvd9tM4nvcCtBMkI+6Kflyf9EX8GOsRRYCKPqhz2hvQR8wYW/pjLhmjVacFU+/Ag==", "id"=>"3"}
+  [1m[35mPublisher Load (0.2ms)[0m  SELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "publishers" WHERE "publishers"."id" = ?  [["id", 3]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/publishers
+Completed 302 Found in 7ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:43:10 -0400
+Processing by PublishersController#index as HTML
+  [1m[35mPublisher Load (0.1ms)[0m  SELECT "publishers".* FROM "publishers"
+  Rendered publishers/index.html.erb within layouts/application (1.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2016-03-27 13:43:22 -0400
+Processing by AuthorsController#new as HTML
+  Rendered authors/new.html.erb within layouts/application (2.0ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 27.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2016-03-27 13:43:29 -0400
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QWg5vqaj3u9d9Xr6RwV4XB0yn/YrMXZbgSWUjxpcEz+1tiWelOPN25ZS4WzXs8PC9ELYTAg6gT/teI6DgKmFxA==", "author"=>{"first_name"=>"Testing ", "last_name"=>"Author"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "authors" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["first_name", "Testing "], ["last_name", "Author"], ["created_at", "2016-03-27 17:43:29.055942"], ["updated_at", "2016-03-27 17:43:29.055942"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 19ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2016-03-27 13:43:29 -0400
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (1.4ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/authors/4" for 127.0.0.1 at 2016-03-27 13:43:33 -0400
+Processing by AuthorsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OuKyLAoCeZWWKKTALae5FBmTvZ1JDbVN5W5b2YD3BOzOPK4MOEJqoV2PP1a9EQKK8OP6J2oGQimJM0HVGgKSFw==", "id"=>"4"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 4]]
+  [1m[35m (3.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 7ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2016-03-27 13:43:33 -0400
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (1.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 13:45:12 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (12.6ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered partials/_sidebar.html.erb (4.1ms)
+Completed 200 OK in 54ms (Views: 44.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2016-03-27 13:45:14 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered books/show.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     6: <div class="books-show-right">
+     7: <h3>Book Info:</h3>
+     8: <ul>
+     9: 	<li><strong>Category: </strong><%= @book.category.name %></li>
+    10: 	<li><strong>Author: </strong><%= @book.author.first_name %> <%= @book.author.last_name %></li>
+    11: 	<li><strong>Publisher: </strong><%= @book.publisher.name %></li>
+    12: 	<li><strong>Year: </strong><%= @book.year %></li>
+  app/views/books/show.html.erb:9:in `_app_views_books_show_html_erb__1196518229503819756_70149575528020'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (109.8ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2016-03-27 13:45:15 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered books/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     6: <div class="books-show-right">
+     7: <h3>Book Info:</h3>
+     8: <ul>
+     9: 	<li><strong>Category: </strong><%= @book.category.name %></li>
+    10: 	<li><strong>Author: </strong><%= @book.author.first_name %> <%= @book.author.last_name %></li>
+    11: 	<li><strong>Publisher: </strong><%= @book.publisher.name %></li>
+    12: 	<li><strong>Year: </strong><%= @book.year %></li>
+  app/views/books/show.html.erb:9:in `_app_views_books_show_html_erb__1196518229503819756_70149533691580'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.3ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2016-03-27 13:45:54 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered books/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     6: <div class="books-show-right">
+     7: <h3>Book Info:</h3>
+     8: <ul>
+     9: 	<li><strong>Category: </strong><%= @book.category.name %></li>
+    10: 	<li><strong>Author: </strong><%= @book.author.first_name %> <%= @book.author.last_name %></li>
+    11: 	<li><strong>Publisher: </strong><%= @book.publisher.name %></li>
+    12: 	<li><strong>Year: </strong><%= @book.year %></li>
+  app/views/books/show.html.erb:9:in `_app_views_books_show_html_erb__1196518229503819756_70149575528020'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.6ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2016-03-27 13:45:54 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered books/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     6: <div class="books-show-right">
+     7: <h3>Book Info:</h3>
+     8: <ul>
+     9: 	<li><strong>Category: </strong><%= @book.category.name %></li>
+    10: 	<li><strong>Author: </strong><%= @book.author.first_name %> <%= @book.author.last_name %></li>
+    11: 	<li><strong>Publisher: </strong><%= @book.publisher.name %></li>
+    12: 	<li><strong>Year: </strong><%= @book.year %></li>
+  app/views/books/show.html.erb:9:in `_app_views_books_show_html_erb__1196518229503819756_70149533691580'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.1ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (115.8ms)
+
+
+Started GET "/categories/6" for 127.0.0.1 at 2016-03-27 13:46:50 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."category_id" = ?[0m  [["category_id", 6]]
+  Rendered categories/show.html.erb within layouts/application (4.8ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2016-03-27 13:46:52 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPublisher Load (0.1ms)[0m  SELECT  "publishers".* FROM "publishers" WHERE "publishers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (9.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered partials/_sidebar.html.erb (2.1ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/categories/5" for 127.0.0.1 at 2016-03-27 13:46:57 -0400
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."category_id" = ?[0m  [["category_id", 5]]
+  Rendered categories/show.html.erb within layouts/application (0.7ms)
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.1ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2016-03-27 13:47:00 -0400
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/publishers" for 127.0.0.1 at 2016-03-27 13:47:09 -0400
+Processing by PublishersController#index as HTML
+  [1m[36mPublisher Load (0.1ms)[0m  [1mSELECT "publishers".* FROM "publishers"[0m
+  Rendered publishers/index.html.erb within layouts/application (1.5ms)
+  Rendered partials/_sidebar.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 13:47:12 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (4.6ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered partials/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 13:48:37 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (3.2ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered partials/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:48:37 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:48:37 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:48:37 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:48:37 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:48:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:48:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:48:37 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 13:48:37 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 13:52:54 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (2.2ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered partials/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:52:54 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:52:54 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:52:54 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:52:54 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:52:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:52:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:52:54 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 13:52:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 13:53:40 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (3.3ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered partials/_sidebar.html.erb (1.3ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:53:40 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:53:40 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:53:40 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:53:40 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:53:40 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:53:40 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:53:40 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 13:53:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 13:54:18 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (3.3ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered partials/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:54:18 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:54:18 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:54:18 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:54:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:54:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:54:18 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:54:18 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 13:54:18 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 13:54:47 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (2.4ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered partials/_sidebar.html.erb (1.3ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:54:47 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:54:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:54:47 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:54:47 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:54:47 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:54:47 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:54:47 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 13:54:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 13:55:01 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (3.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered partials/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 13:55:02 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 13:55:02 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 13:55:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 13:55:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 13:55:02 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 13:55:02 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 13:55:02 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 13:55:02 -0400
+
+
+Started GET "/books/2" for 127.0.0.1 at 2016-03-27 13:57:31 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=2):
+  app/controllers/books_controller.rb:45:in `show'
+
+
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.0ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/delantebess/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 14:01:29 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.3ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 14:01:29 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 14:01:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 14:01:29 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 14:01:29 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 14:01:29 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 14:01:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 14:01:29 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 14:01:29 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 14:01:58 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.8ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.7ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 14:01:58 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 14:01:58 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 14:01:58 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 14:01:58 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 14:01:58 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 14:01:58 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 14:01:58 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 14:01:58 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 14:02:14 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.6ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.3ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 14:02:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 14:02:14 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 14:02:14 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 14:02:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 14:02:14 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 14:02:14 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 14:02:14 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 14:02:14 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 14:02:25 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (3.6ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 14:02:25 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 14:02:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 14:02:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 14:02:25 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 14:02:25 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 14:02:25 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 14:02:25 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 14:02:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 14:03:14 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.4ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 14:03:14 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 14:03:14 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:14 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:14 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:14 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 14:03:14 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 14:03:42 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.6ms)
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 14:03:42 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 14:03:42 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:42 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:42 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:42 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:42 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 14:03:42 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 14:03:56 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.7ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.7ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 14:03:56 -0400
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 14:03:57 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:57 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:57 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 14:03:57 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 14:03:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 14:04:58 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.4ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (1.7ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 14:04:59 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 14:04:59 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 14:04:59 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 14:04:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 14:04:59 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 14:04:59 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 14:04:59 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 14:04:59 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-27 14:09:36 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.5ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered partials/_sidebar.html.erb (2.0ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-03-27 14:09:36 -0400
+
+
+Started GET "/assets/application.self-e88e4fa8071a9edfea94214dd62bbc185238109bf52762a4de450d41134f1e32.css?body=1" for 127.0.0.1 at 2016-03-27 14:09:36 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-03-27 14:09:36 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-03-27 14:09:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-03-27 14:09:36 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-03-27 14:09:36 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-03-27 14:09:36 -0400
+
+
+Started GET "/assets/stock_photos/spiderman_thumbnail-3be986f177f325c4b7fbbca4c64f7b7189c7ac4cace900d5d3363b761fc2a772.jpg" for 127.0.0.1 at 2016-03-27 14:09:36 -0400
