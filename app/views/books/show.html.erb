@@ -1,23 +1,26 @@
 <div id="books-show">
-<h2>Superman</h2>
+<h2><%= @book.title %></h2>
 <div class="books-show-left">
-<%= image_tag('stock_photos/superman_thumbnail.jpg') %>
+<%= image_tag(@book.coverpath) %>
 </div>
 <div class="books-show-right">
 <h3>Book Info:</h3>
 <ul>
-	<li><strong>Category: </strong>Superman</li>
-	<li><strong>Author: </strong></li>
-	<li><strong>Publisher:</strong></li>
-	<li><strong>Year:</strong></li>
-	<li><strong>ISBN:</strong></li>
-	<li><strong>Format:</strong></li>
-	<li><strong>Changes:</strong></li>
+	<li><strong>Category: </strong><%= @book.category.name %></li>
+	<li><strong>Author: </strong><%= @book.author.first_name %> <%= @book.author.last_name %></li>
+	<li><strong>Publisher: </strong><%= @book.publisher.name %></li>
+	<li><strong>Year: </strong><%= @book.year %></li>
+	<li><strong>ISBN: </strong><%= @book.isbn %></li>
+	<li><strong>Format: </strong><%= @book.format %></li>
+	<li><strong>Changes: </strong><%= @book.pages %></li>
 </ul>
 
- <%= link_to "Buy for .99", 'http://hills.ccsf.edu/~dbess1/cnit/index.html#home', class:'btn btn-success', target:'_blank' %>
+ <%= link_to "Buy for " + @book.price, @book.buy, class:'btn btn-success', target:'_blank' %>
 </div>
 <div class="clearfix"></div>
 <h4>Excerpt</h4> 
-<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptates id repudiandae, iusto incidunt modi temporibus eaque sequi vero sapiente aliquid voluptatum ipsa facilis, tenetur unde. Dolorum delectus laboriosam maiores.</em></p>
+<p><%= @book.excerpt %></p>
+
+<h3>Admin Functions</h3>
+<%= link_to 'Edit', edit_book_path(@book.id) %> | <%= link_to 'Delete', book_path(@book), method: :delete, data: {confirm: 'Are you sure?'} %>
 </div>

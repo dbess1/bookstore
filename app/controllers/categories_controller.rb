@@ -8,11 +8,11 @@ class CategoriesController < ApplicationController
     @category = Category.new(category_params)
     if @category.save
       flash[:notice] = "Category Created"
-    redirect_to categories_path
-  else
-    render 'new'
+      redirect_to categories_path
+    else
+      render 'new'
+    end
   end
-end
 
   def update
   end
@@ -24,14 +24,17 @@ end
   end
 
   def index
+    @categories = Category.all
   end
 
   def show
+    @category = Category.find(params[:id])
+    @categories = Category.all
+    @books = @category.books
   end
 
   private
   def category_params
-  params.require(:category).permit(:name)
+    params.require(:category).permit(:name)
+  end
 end
-end
-
